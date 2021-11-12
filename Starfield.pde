@@ -30,7 +30,7 @@ class WhitePiece {
     myHeight = (int)(Math.random()*40)+20;
     mySpeedX = (int)(Math.random()*3)-1;
     mySpeedY = (int)(Math.random()*4)-1;
-    myColor = color ((int)(Math.random()*256), (int)(Math.random()*256),(int)(Math.random()*256));
+    myColor = color ((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
     myOpacity = (int)(Math.random()*60)+60;
   }
 
@@ -55,23 +55,22 @@ class WhitePiece {
     }
     if (changeSpeed == 1)
       mySpeedX +=1;
-      //mySpeedY +=1;
+    //mySpeedY +=1;
     if (changeSpeed == 2)
       mySpeedX +=1;
-      //mySpeedY +=1;
+    //mySpeedY +=1;
     if (changeSpeed == 3)
       mySpeedX +=1;
-      //mySpeedY +=1;
+    //mySpeedY +=1;
     if (changeSpeed == 4)
       mySpeedX +=1;
-      //mySpeedY +=1;
+    //mySpeedY +=1;
     if (changeSpeed >= 5)
-    mySpeedX = 0;
-    
+      mySpeedX = 0;
   }
 
   void show() {
-    fill(myColor,  myOpacity);
+    fill(myColor, myOpacity);
     ellipse((float)myX, (float)myY, (float)myWidth, (float)myHeight);
 
     //    int diam = 0;
